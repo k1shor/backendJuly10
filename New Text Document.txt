@@ -1,0 +1,47 @@
+- create folder - backend
+- open terminal in that folder
+- run-> npm init -y 
+	-> creates package.json
+- run -> npm install express dotenv
+	-> creates packagelock.json, node_modules
+- create new file -> .env
+		define port inside .env	-> PORT=5000
+- create new file -> index.js
+		import express, dotenv, 
+			port from .env
+		create app using express
+		create server -> app.listen(port,....
+- to start server -> run : node index.js
+
+
+- to run server continuously -> install nodemon
+	->change test to 'start' in package.json, script: "nodemon index.js"
+	-> then in terminal run-> npm start
+
+ 
+- functions
+app.get(url, function)
+	url -> broswer
+	function -> what needs to be performed
+		(request, response) => response.send(data)
+
+response -> to send data to the user
+request -> to get data from user
+	request.body -> to get data from user through forms
+	request.params -> to get data using urls
+	request.query -> to get data using urls
+
+
+app.post
+
+
+
+
+
+
+
+
+
+
+
+
