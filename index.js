@@ -7,6 +7,8 @@ const morgan = require('morgan')
 
 const DemoRoute = require('./routes/demoroute')
 const CategoryRoute = require('./routes/categoryRoute')
+const ProductRoute = require('./routes/productRoute')
+const UserRoute = require('./routes/userRoute')
 
 
 const port = process.env.PORT || 8000
@@ -20,6 +22,8 @@ app.use(morgan('dev'))
 // Routes
 app.use(DemoRoute)
 app.use('/api',CategoryRoute)
+app.use('/api',ProductRoute)
+app.use('/api',UserRoute)
 
 
 app.get('/',(request,response)=>{
