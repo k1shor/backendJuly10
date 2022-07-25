@@ -55,6 +55,9 @@ userSchema.methods ={
         catch{
             return ''
         }
+    },
+    authenticate: function(password){
+        return this.hashed_password === this.encryptPassword(password)
     }
 }
 
