@@ -29,6 +29,8 @@ app.use('/api',ProductRoute)
 app.use('/api',UserRoute)
 app.use('/api',OrderRoute)
 
+app.use('/api/public/uploads', express.static('public/uploads'))
+
 
 app.get('/',(request,response)=>{
     response.send("Welcome to express js.")
